@@ -1,0 +1,7 @@
+{
+  "template": "AI-Directed Software Project Template",
+  "version": "1.0.0",
+  "created": "2026-08-26",
+  "canonical_agent_instructions": "AGENTS.md",
+  "canonical_skill_directory": ".agents/skills"
+}
