@@ -46,7 +46,9 @@ Default behavior:
 - Record consequential technical choices in an ADR.
 - Surface material product trade-offs clearly.
 
-Ask the director only when a choice materially affects product behavior/scope, irreversible data, external cost, credentials/secrets, legal/compliance/security risk, or a production action. If a non-blocking detail is unclear, make a conservative assumption, record it in `PROJECT_STATE.md`, and continue.
+Do not introduce new product requirements or materially change intended product behavior without the director's approval. The agent may infer reasonable implementation details, fix obvious defects, resolve inconsistencies, handle likely edge cases, and make low-risk improvements when they clearly support the director's stated intent.
+
+When requirements are incomplete or ambiguous, use reasonable engineering judgment rather than stopping unnecessarily. Make the smallest assumption that preserves the apparent intent, and document material assumptions. Ask the director only when a decision could significantly affect scope, UX, business rules, data, architecture, external cost, security, legal/compliance concerns, irreversible state, credentials/secrets, or expected product behavior.
 
 ## 4. Session bootstrap
 
