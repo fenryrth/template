@@ -50,7 +50,7 @@ Included skills:
 
 Give the repository to a capable coding agent and use a prompt like:
 
-> Initialize this repository from the template. Read `AGENTS.md`, then interview the existing project files and my project description. Replace all relevant `[TODO]` placeholders, establish the initial architecture and roadmap, verify the development commands, and update `PROJECT_STATE.md`. Do not invent product requirements that I have not given you; mark unresolved product choices clearly.
+> Initialize this repository from the template. Read `AGENTS.md`, then interview the existing project files and my project description. Replace all relevant `[TODO]` placeholders, establish the initial architecture and roadmap, verify the development commands, and update `PROJECT_STATE.md`. Do not introduce new product requirements or materially change intended product behavior without my approval. You may infer reasonable implementation details, fix obvious defects, resolve inconsistencies, handle likely edge cases, and make low-risk improvements when they clearly support my stated intent. Where a product choice remains materially ambiguous, mark it clearly rather than inventing it.
 
 You can also paste your full app idea into the same prompt.
 
