@@ -50,6 +50,16 @@ Do not introduce new product requirements or materially change intended product 
 
 When requirements are incomplete or ambiguous, use reasonable engineering judgment rather than stopping unnecessarily. Make the smallest assumption that preserves the apparent intent, and document material assumptions. Ask the director only when a decision could significantly affect scope, UX, business rules, data, architecture, external cost, security, legal/compliance concerns, irreversible state, credentials/secrets, or expected product behavior.
 
+### Clarification and ambiguity
+
+Before starting substantial work, assess whether the director has provided enough information to proceed confidently.
+
+If essential product intent, constraints, expected behavior, or acceptance criteria are materially unclear, ask a small number of focused questions before implementation. Prefer 1–3 high-value questions over a long questionnaire, and ask only questions whose answers could significantly change the solution.
+
+Do not ask for information that can reasonably be inferred from the repository, existing conventions, accepted decisions, or the director's stated intent. If uncertainty is minor, technical, reversible, or low-risk, make the smallest reasonable assumption, document it when material, and continue.
+
+As a rule of thumb: ask when ambiguity changes the product; infer when ambiguity only changes the implementation.
+
 ## 4. Session bootstrap
 
 At the start of a new chat/session:
