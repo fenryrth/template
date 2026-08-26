@@ -1,0 +1,2 @@
+# Load the repository's canonical cross-agent instructions.
+read: AGENTS.md
