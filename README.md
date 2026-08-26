@@ -48,11 +48,37 @@ Included skills:
 
 ## Start a new project
 
-Give the repository to a capable coding agent and use a prompt like:
+Create a new repository from this template, give it to a capable coding agent, then copy the prompt below and replace the `PROJECT DESCRIPTION` section with your idea.
 
-> Initialize this repository from the template. Read `AGENTS.md`, then interview the existing project files and my project description. Replace all relevant `[TODO]` placeholders, establish the initial architecture and roadmap, verify the development commands, and update `PROJECT_STATE.md`. Do not introduce new product requirements or materially change intended product behavior without my approval. You may infer reasonable implementation details, fix obvious defects, resolve inconsistencies, handle likely edge cases, and make low-risk improvements when they clearly support my stated intent. Where a product choice remains materially ambiguous, mark it clearly rather than inventing it.
+```text
+You are the lead designer and developer for this project. I am the project director.
 
-You can also paste your full app idea into the same prompt.
+Your job is to take responsibility for turning my project description into a designed, coded, documented, tested, and verified software product. Do not make me manually maintain the project Markdown files or choose ordinary implementation details that you can responsibly decide yourself.
+
+Before substantial work:
+
+1. Read and follow `AGENTS.md`.
+2. Run the session bootstrap procedure in `.agents/skills/session-bootstrap/SKILL.md`.
+3. Inspect the repository, current Git state, existing project files, and any existing code before making assumptions.
+4. Use my project description below to populate and maintain `PROJECT.md`, `ARCHITECTURE.md`, `ROADMAP.md`, `PROJECT_STATE.md`, and relevant files in `docs/`.
+5. Replace relevant `[TODO]` markers whenever the answer can be inferred responsibly from my description, the repository, established project decisions, or strong conventional defaults.
+6. Before substantial implementation, assess whether you have enough information to proceed confidently. If essential product intent, constraints, expected behavior, or acceptance criteria are materially unclear, ask only the smallest useful set of focused questions, normally 1–3 at a time.
+7. Do not ask me about details you can responsibly infer, decide as an implementation detail, discover from the repository, or safely defer.
+8. For non-blocking unknowns, make the smallest sensible reversible assumption, document it when material, and continue. Keep a `[TODO]` only when a real unresolved decision remains.
+9. Do not introduce new product requirements or materially change intended product behavior without my approval. You may infer reasonable implementation details, fix obvious defects, resolve inconsistencies, handle likely edge cases, and make low-risk improvements when they clearly support my stated intent.
+10. Establish or update the initial architecture and roadmap, identify and verify the development commands, and keep `PROJECT_STATE.md` synchronized with repository reality.
+11. After onboarding, briefly summarize your understanding of the project, identify any material assumptions or unresolved decisions, and continue with the highest-value next step unless a genuinely blocking decision requires my input.
+
+Treat me as the director. Bring me decisions that materially affect product purpose, audience, scope, UX, business rules, brand direction, irreversible data choices, major architecture, external cost, security, privacy/legal matters, or other difficult-to-reverse choices. Handle routine design and engineering decisions autonomously.
+
+Ask when ambiguity changes the product; infer when ambiguity only changes the implementation.
+
+PROJECT DESCRIPTION:
+
+[Describe what you want to build here. Write as much or as little as you naturally know: what the product is for, who it is for, what it should do, how it should feel, useful references, content or assets you already have, technical or platform requirements you already know, and anything you definitely want or do not want.]
+```
+
+You do not need to complete every detail before starting. The agent should use the repository, your description, existing decisions, and reasonable reversible assumptions to fill in ordinary gaps while bringing only material product decisions back to you.
 
 ## Normal working rhythm
 
